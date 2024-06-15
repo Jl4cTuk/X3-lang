@@ -195,7 +195,7 @@ class VariableDeclarationExprAST(ExprAST):
 
     def evaluate(self):
         value = self.expr.evaluate()
-        named_values[self.name] = {'type': 'double', 'value': value}
+        named_values[self.name] = {'type': 'int', 'value': value}
         return value
 
     def __repr__(self) -> str:
